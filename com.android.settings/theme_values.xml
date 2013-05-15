@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="memory_avail">#ffcccccc</color><color name="background_holo_light" package="android">#00f3f3f3</color>
+</MIUI_Theme_Values>

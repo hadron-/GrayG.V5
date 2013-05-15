@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="resource_comment_list_signature_color">#6effffff</color><color name="resource_comment_list_text_color">#ffcccccc</color><color name="black" package="android">#ffffffff</color><color name="resource_list_tab_title_selected_color">#ff8cc63c</color>
+</MIUI_Theme_Values>
