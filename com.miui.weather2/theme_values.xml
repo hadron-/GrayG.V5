@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="trend_view_yellow_color">#ff8cc63c</color><color name="aqi_light_pollution_color">#ffff6666</color><color name="information_warning">#ff8cc63c</color><color name="black" package="android">#ffffffff</color><color name="aqi_unhealthy_color">#ffff3333</color>
+</MIUI_Theme_Values>
