@@ -1,6 +1,0 @@
-﻿This is the first version (1.0.0.11)after uploading to git
-#
-# Write a tag message
-# Lines starting with '#' will be ignored.
-#
-
