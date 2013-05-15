@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="contact_photo_view_color0">#ff557d00</color><color name="call_log_missed_call_highlight_color">#ffff3333</color><color name="missed_call_text">#ffff3333</color><color name="background_primary">#ff323232</color><color name="editor_account_name_color">#ccffffff</color><color name="primary_text_holo_light">#cbffffff</color><color name="v5_text_color_disable_light" package="miui">#ffcccccc</color><color name="high_light_text">#ff8cc63c</color><color name="contact_photo_view_gradient_color0">#ff82ac00</color>
+</MIUI_Theme_Values>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="agenda_day_bar_background_color">#ff6600ff</color><color name="white" package="android">#ff666666</color><color name="month_day_number_selected">#ffff00ff</color><color name="calendar_secondary_visible">#ff999999</color><color name="calendar_visible">#ffcccccc</color><color name="month_bgcolor">#ffffff00</color><color name="panel_text_foreground">#ff00ffcc</color><color name="mini_month_bg_color">#ff3333ff</color><color name="background_color">#ff33ff33</color>
+</MIUI_Theme_Values>

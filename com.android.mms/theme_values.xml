@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="text_color_message_in">#ff333333</color><color name="text_color_message_out">#ff333333</color><color name="conversation_unread_text_color">#ff8cc63c</color><color name="text_color_recent_contact">#ffffffff</color><color name="text_color_attachment_type">#ffcccccc</color>
+</MIUI_Theme_Values>
