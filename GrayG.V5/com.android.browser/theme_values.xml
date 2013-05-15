@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MIUI_Theme_Values>
-    <color name="qc_selected">#ff73a331</color><color name="qc_sub">#ff8cc63c</color><color name="nav_tab_title_selected">#ff8cc63c</color><color name="tab_text_selected">#ff8cc63c</color><color name="bottom_bar_icon_text_color">#b3ffffff</color><color name="bottom_bar_icon_text_shadow">#99000000</color><color name="qc_normal">#ff8cc63c</color>
+    <color name="qc_selected">#ff73a331</color><color name="qc_sub">#ff8cc63c</color><color name="nav_tab_title_selected">#ff8cc63c</color><color name="tab_text_selected">#ff8cc63c</color><color name="bottom_bar_icon_text_color">#b3ffffff</color><color name="qc_normal">#ff8cc63c</color><color name="bottom_bar_icon_text_shadow">#99000000</color>
 </MIUI_Theme_Values>
