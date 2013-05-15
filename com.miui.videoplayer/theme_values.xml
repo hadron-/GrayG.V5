@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="option_menu_listview_textview_text_color_v5">#ffcccccc</color><color name="listview_item_selected_color">#ff8cc63c</color><color name="listview_item_selected_color_v5">#ff8cc63c</color><color name="v5_airkan_devices_selected_color">#ff8cc63c</color>
+</MIUI_Theme_Values>

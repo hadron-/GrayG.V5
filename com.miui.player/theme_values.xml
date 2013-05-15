@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MIUI_Theme_Values>
+    <color name="black_80_transparent">#ffcccccc</color><color name="primary_tab_text_selected_color">#ff8cc63c</color><color name="black_50_transparent">#ff999999</color><color name="black" package="android">#ffcccccc</color>
+</MIUI_Theme_Values>
