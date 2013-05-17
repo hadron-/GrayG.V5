@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MIUI_Theme_Values>
-    <color name="transparent_70_black">#3effffff</color><color name="transparent_40_black">#81ffffff</color><color name="transparent_20_black">#2fffffff</color>
+    <color name="transparent_70_black">#b0ffffff</color><color name="transparent_40_black">#00cccc00</color><color name="transparent_20_black">#0000ff00</color>
 </MIUI_Theme_Values>
