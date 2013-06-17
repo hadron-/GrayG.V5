@@ -1,0 +1,5 @@
+<strings>
+    <string name="short_date_time" value="M月d日 E"/>
+    <string name="long_date_time" value="yyyy年 M月d日"/>
+	<string name="language" value="zh_CN"/>
+</strings>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clock version="1" type="awesome" update_interval="60000" screenWidth="720">
+	<VariableBinders>
+		<ContentProviderBinder uri="content://weather/weather" columns="city_name,temperature,temperature_range,description,weather_type" countName="hasweather">
+			<Variable name="weather_id" type="int" column="weather_type"/>
+			<Variable name="weather_location" type="string" column="city_name"/>
+			<Variable name="weather_temperature" type="int" column="temperature"/>
+			<Variable name="weather_temperature_raw" type="string" column="temperature"/>
+			<Variable name="weather_temperature_range" type="string" column="temperature_range"/>
+			<Variable name="weather_description" type="string" column="description"/>
+		</ContentProviderBinder>
+	</VariableBinders>
+
+	<VarArray type="string">
+		<Vars>
+			<Var name="weather_description_en" index="#weather_id"/>
+		</Vars>
+
+		<Items>
+			<Item value="Clear"/>
+			<Item value="Cloudy"/>
+			<Item value="Hazy"/>
+			<Item value="Foggy"/>
+			<Item value="Severe rainstorm"/>
+			<Item value="Rainstorm"/>
+			<Item value="Very heavy rainfall"/>
+			<Item value="Thunderstorm"/>
+			<Item value="Shower"/>
+			<Item value="Heavy rainfall"/>
+			<Item value="Rain"/>
+			<Item value="Drizzle"/>
+			<Item value="Sleet"/>
+			<Item value="Snowstorm"/>
+			<Item value="Patches of snowfall"/>
+			<Item value="Heavy snowfall"/>
+			<Item value="Snowfall"/>
+			<Item value="Light snowfall"/>
+			<Item value="Strong sandstorm"/>
+			<Item value="Sandstorm"/>
+			<Item value="Light sandstorm"/>
+			<Item value="Sandstorm"/>
+			<Item value="Hail"/>
+			<Item value="Floating Dust"/>
+			<Item value="Haze"/>
+		</Items>
+	</VarArray>
+	<VarArray type="string">
+		<Vars>
+			<Var name="weather_description_zh_TW" index="#weather_id"/>
+		</Vars>
+
+		<Items>
+			<Item value="晴"/>
+			<Item value="多雲"/>
+			<Item value="陰"/>
+			<Item value="霧"/>
+			<Item value="特大暴雨"/>
+			<Item value="大暴雨"/>
+			<Item value="暴雨"/>
+			<Item value="雷陣雨"/>
+			<Item value="陣雨"/>
+			<Item value="大雨"/>
+			<Item value="中雨"/>
+			<Item value="小雨"/>
+			<Item value="雨夾雪"/>
+			<Item value="暴雪"/>
+			<Item value="陣雪"/>
+			<Item value="大雪"/>
+			<Item value="中雪"/>
+			<Item value="小雪"/>
+			<Item value="強沙塵暴"/>
+			<Item value="沙塵暴"/>
+			<Item value="沙塵"/>
+			<Item value="揚沙"/>
+			<Item value="冰雹"/>
+			<Item value="浮塵"/>
+			<Item value="霾"/>
+		</Items>
+	</VarArray>
+	 
+	<Group y="-50">
+		<Time name="time" x="#screen_width-39" y="174" align="right" alignV="center" src="time.png"/>
+		<Var name="show_weather" expression="#hasweather*not(isnull(@weather_description)+eqs(@weather_temperature_raw,''))" />
+		<!-- weather info display -->
+		<Group visibility="#show_weather">
+			<DateTime x="#view_width-46" y="264+4" align="right" alignV="center" color="#000000" alpha="25" size="32" format="@short_date_time"/>
+			<DateTime x="#view_width-46" y="264" align="right" alignV="center" color="#ffffff" alpha="255" size="32" format="@short_date_time"/>
+			<Text textExp="#weather_temperature+'°'" x="#view_width-46" y="306+4" align="right" size="32" alignV="center" color="#000000" alpha="25"/>
+			<Text name="Temp" textExp="#weather_temperature+'°'" x="#view_width-46" y="306" align="right" size="32" alignV="center" color="#ffffff" alpha="255"/>
+			<Text textExp="ifelse(eqs(@language,'zh_CN'),@weather_description,eqs(@language,'zh_TW'),@weather_description_zh_TW,@weather_description_en)" x="#view_width-46-#Temp.text_width-20" y="306+4" align="right" size="32" alignV="center" color="#000000" alpha="25"/>
+			<Text textExp="ifelse(eqs(@language,'zh_CN'),@weather_description,eqs(@language,'zh_TW'),@weather_description_zh_TW,@weather_description_en)" x="#view_width-46-#Temp.text_width-20" y="306" align="right" size="32" alignV="center" color="#ffffff" alpha="255"/>
+		
+		<Var name="weather_y" expression="134" const="true" />
+		<Var name="has_night_icon" expression="eq(#weather_id,0)+eq(#weather_id,1)+eq(#weather_id,8)+eq(#weather_id,11)" />
+		<Var name="icon_suffix" expression="ifelse(#has_night_icon,'_'+not(ge(#hour24,6)*le(#hour24,17)),'')" type="string" />
+		<Image name="weather" srcExp="'weather_' + #weather_id + @icon_suffix + '.png'" x="44" y="#weather_y"/> 
+
+		
+		
+		</Group>
+		<Group visibility="not(#show_weather)">
+			<DateTime x="#view_width-44" y="254+4" align="right" alignV="center" color="#000000" alpha="25" size="32" format="@long_date_time"/>
+			<DateTime x="#view_width-44" y="254" align="right" alignV="center" color="#ffffff" alpha="234" size="32" format="@long_date_time"/>
+			<DateTime x="#view_width-44" y="296+4" align="right" alignV="center" color="#000000" alpha="25" size="32" format="EEEE"/>
+			<DateTime x="#view_width-44" y="296" align="right" alignV="center" color="#ffffff" alpha="234" size="32" format="EEEE"/>
+		</Group>
+	</Group>
+    <!-- 触发点击事件 -->
+    <Button name="clock_button" x="#view_width-#time.actual_w-39" y="74" w="#time.actual_w" h="#time.actual_h/2+138"/>
+</clock>
