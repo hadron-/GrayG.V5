@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <MIUI_Theme_Values>
-    <color name="account_setup_label_text_color">#ffcccccc</color><color name="account_setup_info_text_color">#ffcccccc</color>
+<color name="account_setup_label_text_color">#ffffffff</color>
+<color name="account_setup_info_text_color">#ffffffff</color>
+<color name="v5_primary_text_color_light" package="miui">#ff333333</color>
 </MIUI_Theme_Values>
