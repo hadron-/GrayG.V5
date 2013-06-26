@@ -105,6 +105,7 @@
 			<DateTime x="#view_width-44" y="296" align="right" alignV="center" color="#ffffff" alpha="234" size="32" format="EEEE"/>
 		</Group>
 	</Group>
-    <!-- 触发点击事件 -->
+    <!-- Open Colck hotspot -->
     <Button name="clock_button" x="#view_width-#time.actual_w-39" y="74" w="#time.actual_w" h="#time.actual_h/2+138"/>
+    <Button name="weather_button" x="44" y="74" w="250" h="200"/>
 </clock>
